@@ -20,7 +20,7 @@ export const GlobalProvider = ({ children }) => {
         try {
             console.log("1")
             // dev server
-            const response = await fetch('https://attraction-env.eba-nmaavmmm.us-east-1.elasticbeanstalk.com/api/companies')
+            const response = await fetch('http://attraction-env.eba-nmaavmmm.us-east-1.elasticbeanstalk.com/api/companies')
          
             // localt tomcat server 
        //     const response = await fetch('http://localhost:8080/Attractions-0.1/api/companies')
@@ -67,7 +67,7 @@ export const GlobalProvider = ({ children }) => {
 
         try {
         //Dette er vores dev miljø 
-             const response = await fetch('https://attraction-env.eba-nmaavmmm.us-east-1.elasticbeanstalk.com/api/company',config)
+             const response = await fetch('http://attraction-env.eba-nmaavmmm.us-east-1.elasticbeanstalk.com/api/company',config)
         
         // dette er til en lokalt installerede tomcat server 
         //const response = await fetch('http://localhost:8080/Attractions-0.1/api/company',config)
